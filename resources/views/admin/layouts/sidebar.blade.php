@@ -20,7 +20,7 @@
                             </li>
 
                             @can('article-list')
-                                <li class="{{ (request()->is('admin/article*')) ? 'active' : '' }}"> 
+                                <li class="{{ (request()->is('admin/articles/*')) ? 'active' : '' }}"> 
                                     <a class="sidebar-link" href="{{ route('articles.index') }}" aria-expanded="false">
                                         <i class="fe fe-layout"></i>
                                         <span>
@@ -31,7 +31,7 @@
                             @endcan
 
                             @can('articlecategory-list')
-                                <li class="{{ (request()->is('admin/articlecategory*')) ? 'active' : '' }}"> 
+                                <li class="{{ (request()->is('admin/articlecategories/*')) ? 'active' : '' }}"> 
                                     <a class="sidebar-link" href="{{ route('articlecategories.index') }}" aria-expanded="false">
                                         <i class="fe fe-layout"></i>
                                         <span>
@@ -42,7 +42,7 @@
                             @endcan
 
 
-
+                            users
 
                             <li class="submenu"> 
 
@@ -55,7 +55,7 @@
                                 <ul style="display: none;">
 
                                     @can('user-list')
-                                        <li>
+                                        <li  class="{{ (request()->is('admin/users/*')) ? 'active' : '' }}">
                                             <a href="{{ route('users.index') }}" title="{{__('sidebar.user')}}" class="sidebar-link {{ (request()->is('admin/user*')) ? 'active' : '' }}">
                                                 <span class="hide-menu">{{__('sidebar.user')}}</span>
                                             </a>
@@ -63,7 +63,7 @@
                                     @endcan
 
                                     @can('role-list')
-                                        <li>
+                                        <li  class="{{ (request()->is('admin/roles/*')) ? 'active' : '' }}">
                                             <a href="{{ route('roles.index') }}" title="{{__('sidebar.roles')}}" class="sidebar-link {{ (request()->is('admin/roles*')) ? 'active' : '' }}">
                                                 <span class="hide-menu">{{__('sidebar.user_role')}}</span>
                                             </a>
@@ -71,7 +71,7 @@
                                     @endcan
 
                                     @can('permission-list')
-                                        <li>
+                                        <li  class="{{ (request()->is('admin/permissions/*')) ? 'active' : '' }}">
                                             <a href="{{ route('permissions.index') }}" title="{{__('sidebar.permissions')}}" class="sidebar-link {{ (request()->is('admin/permissions*')) ? 'active' : '' }}">
                                                 <span class="hide-menu">{{__('sidebar.permission')}}</span>
                                             </a>
@@ -79,7 +79,7 @@
                                     @endcan
 
                                     @can('user-activity-list')
-                                        <li>
+                                        <li  class="{{ (request()->is('admin/user-activity')) ? 'active' : '' }}">
                                             <a href="/admin/user-activity" title="{{__('sidebar.useractivity')}}" class="sidebar-link {{ (request()->is('admin/setting/useractivity*')) ? 'active' : '' }}">
                                                 {{-- <i data-feather="user-check" class="feather-icon"></i> --}}
                                                 <span class="hide-menu">{{__('sidebar.useractivity')}}</span>
@@ -104,7 +104,7 @@
                                 <ul style="display: none;">
 
                                     @can('setting-edit')
-                                        <li>
+                                        <li  class="{{ (request()->is('admin/setting/site-setting/*')) ? 'active' : '' }}">
                                             <a href="{{route('settings.site-setting.edit')}}" title="{{__('sidebar.file-manager')}}" class="sidebar-link {{ (request()->is('admin/setting/site-setting*')) ? 'active' : '' }}">
                                                 <span class="hide-menu">{{__('sidebar.site-setting')}}</span>
                                             </a>
@@ -112,7 +112,7 @@
                                     @endcan
 
                                     @can('file-manager')
-                                        <li>
+                                        <li  class="{{ (request()->is('admin/setting/file-manager/*')) ? 'active' : '' }}">
                                             <a href="{{route('filemanager.index')}}" title="{{__('sidebar.file-manager')}}" class="sidebar-link {{ (request()->is('admin/setting/file-manager*')) ? 'active' : '' }}">
                                                 <span class="hide-menu">{{__('sidebar.file-manager')}}</span>
                                             </a>
@@ -120,7 +120,7 @@
                                     @endcan
 
                                     @can('log-list')
-                                        <li>
+                                        <li  class="{{ (request()->is('admin/log-viewer')) ? 'active' : '' }}">
                                             <a href="/admin/log-reader" title="{{__('sidebar.log')}}" class="sidebar-link {{ (request()->is('admin/setting/log*')) ? 'active' : '' }}">
                                                 <span class="hide-menu">{{__('sidebar.log')}}</span>
                                             </a>

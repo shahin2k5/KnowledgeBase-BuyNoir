@@ -42,9 +42,9 @@
                             
 
                             @if($setting->website_logo_light != null || !empty($setting->website_logo_light))
-                                <img class="img-fluid" src="{{$setting->website_logo_light}}" alt="{{$setting->website_title}}">
+                                <img class="img-fluid ok" src="{{$setting->website_logo_light}}" alt="{{$setting->website_title}}">
                             @else
-                                <img class="img-fluid" src="/assets/admin/img/logo-white.png" alt="Logo">
+                                <img class="img-fluid" src="/assets/admin/img/logo_white.png" alt="Logo">
                             @endif
                         </div>
                         <div class="login-right">

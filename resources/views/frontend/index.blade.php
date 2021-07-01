@@ -3,7 +3,7 @@
 @extends('frontend.layouts.master')
 
 @section('title')
-	Home
+	BuyNoir Knowledge Base
 @endsection
 
 

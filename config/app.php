@@ -244,6 +244,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Carbon' => Illuminate\Support\Carbon::class,
 
     ],
 

@@ -5,8 +5,8 @@
         <div class="footer py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col text-center">
-                        <img src="{{ $setting->logo }}" alt="{{ $setting->title }}" style="width: 100px;"  onerror="this.src='{{ asset('assets/admin/img/logo.png') }}';">
+                    <div class="col text-center">   
+                        <img src="{{ asset($setting->logo_white)}}" alt="{{ $setting->title }}" style="width: 100px;"  onerror="this.src='{{ asset('assets/admin/img/logo_white.png') }}';">
                         <ul class="list-unstyled mt-3 mb-0 footer-social-media">
 
                             <li><a href="{{ $setting->facebook }}"><i class="fab fa-facebook-f"></i></a></li>

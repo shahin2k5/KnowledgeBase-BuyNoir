@@ -55,15 +55,18 @@
 				<div class="row">
                     <div class="col">
                         <div class="px-4 py-5 px-lg-5 bg-white">
-                            <h3 class="mb-3 text-primary-dark">{{$page->title}}</h3>
+                            <h3 class="mb-3 text-primary-dark"><b>{{$page->title}}</b></h3>
                             <div class="row align-items-center gx-2 mb-4">
                                 <div class="col-auto">
                                     <div class="bg-primary text-white fw-bold text-center rounded-circle"
                                         style="width: 35px; height: 35px; line-height: 35px">P</div>
                                 </div>
                                 <div class="col">
-                                    <p class="m-0 small">Written by {{-- {{$page->user_id}} --}}</p>
-                                    <p class="m-0 small">{{$page->updated_at}}</p>
+									@php
+										$user = \App\Models\User::find($page->user_id);
+									@endphp
+                                    <p class="m-0 small"><b>Written by   {{$user->name}} </b></p>
+                                    <p class="m-0 small">Last updated: {{date('Y-m-d', strtotime($page->updated_at));}}</p>
                                 </div>
                             </div>
 

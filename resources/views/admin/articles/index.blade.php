@@ -45,6 +45,7 @@
 										<th class="">{{__('article.form.title')}}</th>
 								
 										<th class="">{{__('article.form.category')}}</th>
+										<th class="">{{__('article.form.view')}}</th>
 										<th class="">{{__('article.form.status')}}</th>
 										<th class="">{{__('article.form.user_id')}}</th>
 
@@ -95,8 +96,9 @@
 				        { data: 'title', name: 'title' },
 				     
 				        { data: 'category', name: 'category' },	
+				        { data: 'view', name: 'view' },	
 				        { data: 'status', name: 'status' },	
-				        { data: 'user_id', name: 'user_id' },						        
+				        { data:'user_id', name: 'user' },						        
 
 						@if(Gate::check('article-edit') || Gate::check('article-delete'))
 							{ data: 'action', name: 'action', orderable: false, searchable: false}

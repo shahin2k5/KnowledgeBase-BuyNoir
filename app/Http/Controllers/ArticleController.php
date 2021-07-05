@@ -110,6 +110,10 @@ class ArticleController extends Controller
                     $category = ArticleCategory::find($row->article_category_id);
                     return $category->title;
                 })
+                ->addColumn('view', function($row){
+                    $slug = $row->slug;
+                    return "<a href='/article/".$slug."' target=_blank>View</a>";
+                })
 
                 ->editColumn('created_at', '{{date("jS M Y", strtotime($created_at))}}')
 	            ->editColumn('updated_at', '{{date("jS M Y", strtotime($updated_at))}}')

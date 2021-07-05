@@ -33,6 +33,7 @@ return [
         'status' => 'Status',
         'article_category' => 'Article Category',
         'user_id' => 'Published By',
+        'view' => 'View',
         'permission' => 'Permission',
         'add-button' => 'Add New Article',
         'save-button' => 'Save',

@@ -44,6 +44,7 @@
 										<th class="">{{__('#')}}</th>
 										<th class="">{{__('article.form.title')}}</th>
 								
+										<th class="">{{__('article.form.category')}}</th>
 										<th class="">{{__('article.form.status')}}</th>
 										<th class="">{{__('article.form.user_id')}}</th>
 
@@ -93,6 +94,7 @@
 						{ data: 'DT_RowIndex', name: 'DT_RowIndex' },
 				        { data: 'title', name: 'title' },
 				     
+				        { data: 'category', name: 'category' },	
 				        { data: 'status', name: 'status' },	
 				        { data: 'user_id', name: 'user_id' },						        
 

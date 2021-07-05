@@ -28,6 +28,7 @@ return [
         'id' => 'ID',
         'title' => 'Title',
         'slug' => 'Slug',
+        'category' => 'Category',
         'description' => 'Description',
         'status' => 'Status',
         'article_category' => 'Article Category',

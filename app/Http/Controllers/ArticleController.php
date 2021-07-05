@@ -106,6 +106,10 @@ class ArticleController extends Controller
                     $user = User::find($row->user_id);
                     return $user->name;
                 })
+                ->addColumn('category', function($row){
+                    $category = ArticleCategory::find($row->article_category_id);
+                    return $category->title;
+                })
 
                 ->editColumn('created_at', '{{date("jS M Y", strtotime($created_at))}}')
 	            ->editColumn('updated_at', '{{date("jS M Y", strtotime($updated_at))}}')

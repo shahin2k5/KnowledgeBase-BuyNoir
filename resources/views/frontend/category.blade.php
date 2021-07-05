@@ -47,7 +47,7 @@
                                             <div class="row">
                                                 <div class="col">
                                                     <h5 class="mb-1 text-primary-dark">{{ $article->title }}</h5>
-                                                    <p class="mb-3">{!! $article->description !!}</p>
+                                                    <p class="mb-3">{!! substr($article->description,0,150) !!}...</p>
                                                     <div class="row align-items-center gx-2">
                                                         <div class="col-auto">
                                                             <div class="bg-primary text-white fw-bold text-center rounded-circle"

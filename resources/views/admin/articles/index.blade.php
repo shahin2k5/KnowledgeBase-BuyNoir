@@ -43,7 +43,7 @@
 									<tr>
 										<th class="">{{__('#')}}</th>
 										<th class="">{{__('article.form.title')}}</th>
-										<th class="">{{__('article.form.slug')}}</th>
+								
 										<th class="">{{__('article.form.status')}}</th>
 										<th class="">{{__('article.form.user_id')}}</th>
 
@@ -92,7 +92,7 @@
 				columns			: [
 						{ data: 'DT_RowIndex', name: 'DT_RowIndex' },
 				        { data: 'title', name: 'title' },
-				        { data: 'slug', name: 'slug' },
+				     
 				        { data: 'status', name: 'status' },	
 				        { data: 'user_id', name: 'user_id' },						        
 

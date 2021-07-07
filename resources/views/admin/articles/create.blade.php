@@ -209,4 +209,13 @@
 	    });
 
     </script>
+
+    <script type="text/javascript">
+
+		$("#title").keyup(function(){
+    		var title = this.value;
+    		title = title.replace(/[^a-z0-9\s]/gi, '').replace(/[_\s]/g, '-').toLowerCase();
+			$("#slug").val(title);
+		})
+	</script>
 @endpush

@@ -108,7 +108,7 @@ class ArticleController extends Controller
                 })
                 ->addColumn('category', function($row){
                     $category = ArticleCategory::find($row->article_category_id);
-                    return $category->title;
+                    return "<a href='/category/".$category->slug."' target=_blank>".$category->title."</a>" ;
                 })
                 ->addColumn('view', function($row){
                     $slug = $row->slug;

@@ -21,7 +21,7 @@
                                         <i class="list-group-item-icon fas fa-book-open ms-lg-5"></i>
                                     </div>
                                     <div class="col">
-                                        <h3 class="mb-3 text-primary-dark">Search Result for "{{ Request::get('query') }}"</h3>
+                                        <h3 class="mb-3 text-primary-dark">Search Result for "{{ Request::get('q') }}"</h3>
                                         <div class="row align-items-center gx-2">
                                             <div class="col-auto">
                                                 <div class="bg-primary text-white fw-bold text-center rounded-circle"
@@ -59,6 +59,10 @@
                                             </div>
                                         </a>
                                     @endforeach
+                                </div>
+
+                                <div class="mt-4 d-flex justify-content-center">
+                                    {{ $articles->links() }}
                                 </div>
 
                             </div>

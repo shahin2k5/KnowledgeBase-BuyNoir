@@ -52,13 +52,16 @@ class FrontendController extends Controller
     }
 
 
-    public function search() {
-        if(isset($_GET['query']) && !empty($_GET['query'])) {
-            $query = $_GET['query'];
+    public function search(Request $request) {
+        if(isset($request->q) && !empty($request->q)) {
+            $query = $request->q;
             $articles = Article::query()
             ->where('title', 'LIKE', "%{$query}%") 
             ->orWhere('description', 'LIKE', "%{$query}%") 
-            ->get();
+            ->paginate(10);
+
+            $articles->appends(['q' => $query]);
+
             return view('frontend.search', compact('articles'));
         }
 

@@ -122,6 +122,7 @@ Route::group(['middleware'=>'language'],function ()
 	Route::get('/', 					[App\Http\Controllers\FrontendController::class, 'index'])->name('home');
 	Route::get('/category/{slug}', 			[App\Http\Controllers\FrontendController::class, 'article_category'])->name('article_category');
 	Route::get('/article/{slug}', 			[App\Http\Controllers\FrontendController::class, 'article'])->name('article');
+	Route::get('/search', 			[App\Http\Controllers\FrontendController::class, 'search'])->name('search');
 	
 
 });

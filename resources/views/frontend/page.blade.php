@@ -74,12 +74,12 @@
                                 {!! $page->description !!}
                             </div>
 
-                            <div class="vote-wrapper text-center p-4" style="background-color: #f3f5f7">
+                            {{-- <div class="vote-wrapper text-center p-4" style="background-color: #f3f5f7">
                                 <p class="mb-2">Did this answer your question?</p>
                                 <button class="btn" title="Disappointed">😞</button>
                                 <button class="btn" title="Neutral">😐</button>
                                 <button class="btn" title="Happy">😃</button>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

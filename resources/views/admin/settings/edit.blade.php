@@ -101,9 +101,9 @@
 													<div class="">
 								            	
 										            	@if(!empty($setting->logo))
-										            		<img src="{{ $setting->logo }}" alt="..." id="logo_output" class="img-thumbnail rounded mb-3"  onerror="this.src='{{ asset('assets/admin/img/logo.png') }}';">
+										            		<img src="{{ $setting->logo }}" alt="..." id="logo_output" class="img-thumbnail rounded mb-3"  onerror="this.src='{{ asset('assets/admin/img/logo.svg') }}';">
 										            	@else
-										            		<img src="" alt="..." id="logo_output" class="img-thumbnail rounded mb-3" onerror="this.src='{{ asset('assets/admin/img/logo.png') }}';">
+										            		<img src="" alt="..." id="logo_output" class="img-thumbnail rounded mb-3" onerror="this.src='{{ asset('assets/admin/img/logo.svg') }}';">
 										            	@endif
 
 										                <input type="text" hidden id="logo" class="form-control" name="logo" aria-label="Website Logo" aria-describedby="logo_button_image">
@@ -132,7 +132,7 @@
 										            	@if(!empty($setting->logo_white))
 										            		<img src="{{ $setting->logo_white }}" alt="..." id="logo_output" class="img-thumbnail rounded mb-3"  onerror="this.src='{{ asset('assets/admin/img/logo_white.png') }}';">
 										            	@else
-										            		<img src="" alt="..." id="logo_output" class="img-thumbnail rounded mb-3" onerror="this.src='{{ asset('assets/admin/img/logo_white.png') }}';">
+										            		<img src="" alt="..." id="logo_output" class="img-thumbnail rounded mb-3" onerror="this.src='{{ asset('assets/admin/img/logo-white.svg') }}';">
 										            	@endif
 
 										                <input type="text" hidden id="logo_white" class="form-control" name="logo_white" aria-label="Website Logo" aria-describedby="logo_button_image">
@@ -158,7 +158,7 @@
 													<div class="">
 								            	
 										            	@if(!empty($setting->favicon))
-										            		<img src="{{ $setting->favicon }}" alt="..." id="favicon_output" class="img-thumbnail rounded mb-3"  onerror="this.src='{{ asset('assets/admin/img/favicon.ico') }}';">
+										            		<img src="{{ $setting->favicon }}" alt="..." id="favicon_output" class="img-thumbnail rounded mb-3"  onerror="this.src='{{ asset('assets/admin/img/favicon.png') }}';">
 										            	@else
 										            		<img src="" alt="..." id="favicon_output" class="img-thumbnail rounded mb-3" onerror="this.src='{{ asset('assets/admin/img/favicon.png') }}';">
 										            	@endif

@@ -10,7 +10,7 @@
                     </a>
                 @else
                     <a href="{{ route('dashboard') }}" class="logo">
-                        <img src="/assets/admin/img/logo.png" alt="Logo">
+                        <img src="/assets/admin/img/logo.svg" alt="Logo">
                     </a>
                 @endif
 

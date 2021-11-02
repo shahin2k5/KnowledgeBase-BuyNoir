@@ -3,7 +3,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col">
                         <a href="{{ route('home') }}">
-                            <img src="{{ $setting->logo_white }}" alt="{{ $setting->title }}" style="width: 100px;"  onerror="this.src='{{ asset('assets/admin/img/logo.png') }}';">
+                            <img src="{{ $setting->logo_white }}" alt="{{ $setting->title }}" style="width: 100px;"  onerror="this.src='{{ asset('assets/admin/img/logo.svg') }}';">
                         </a>
                     </div>
                     <div class="col-auto">
@@ -17,8 +17,8 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <form class="search-box mt-4">
-                            <input type="search" class="form-control" placeholder="Search for articles...">
+                        <form action="{{ route('search') }}" method="GET" class="search-box mt-4">
+                            <input type="search" class="form-control" placeholder="Search for articles..." name="query" required>
                             <button type="submit" class="btn"><i class="fas fa-search"></i></button>
                         </form>
                     </div>

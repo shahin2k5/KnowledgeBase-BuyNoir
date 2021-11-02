@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col">
                         <form action="{{ route('search') }}" method="GET" class="search-box mt-4">
-                            <input type="search" class="form-control" placeholder="Search for articles..." name="q" required>
+                            <input type="search" class="form-control" placeholder="Search for articles..." name="q" value="{{ Request::get('q') }}" required>
                             <button type="submit" class="btn"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
